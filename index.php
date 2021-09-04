@@ -74,14 +74,26 @@
         echo strpos($myString,$findMy, 12); 
     */
 
-    $search = '9';
-    $replace = '*';
-    $text = '91 75 1A EC 9A C7';
-    str_replace( $search, $replace, $text, $count ); #reemplazar texto
+    /* 
+        $search = '9';
+        $replace = '*';
+        $text = '91 75 1A EC 9A C7';
+        str_replace( $search, $replace, $text, $count ); #reemplazar texto
 
-    $arg1 = 1994;
-    $arg2 = 'PHP';
-    $text = 'EN %2$s fue creado %1$d';
-    echo sprintf( $text, $arg1, $arg2 ); # formateo de text
+        $arg1 = 1994;
+        $arg2 = 'PHP';
+        $text = 'EN %2$s fue creado %1$d';
+        echo sprintf( $text, $arg1, $arg2 ); # formateo de text 
+    */
+
+
+    /**
+     * PCRE
+     * 
+     */
+    $text = '21/10/2018';
+    $regex = '/Le{2,3}r/';
+    echo preg_match($regex ,$text);
+    echo preg_match ("/([0-2][0-9]|3[0-1])(\/|-)(0[1-9]|1[0-2])(\/|-)(\d{4})/",$text);
 
 ?>
