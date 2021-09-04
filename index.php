@@ -66,9 +66,22 @@
      *  EXTRAER Y BUSCAR
      * 
      */
-    $myString = "Bienvenido al mundo de la programacion";
-    $findMy = "a";
-    echo substr("MARINES MENDEZ GALLEGOS" , -8);
-    echo strpos($myString,$findMy, 12);
+
+    /* 
+        $myString = "Bienvenido al mundo de la programacion";
+        $findMy = "a";
+        echo substr("MARINES MENDEZ GALLEGOS" , -8);
+        echo strpos($myString,$findMy, 12); 
+    */
+
+    $search = '9';
+    $replace = '*';
+    $text = '91 75 1A EC 9A C7';
+    str_replace( $search, $replace, $text, $count ); #reemplazar texto
+
+    $arg1 = 1994;
+    $arg2 = 'PHP';
+    $text = 'EN %2$s fue creado %1$d';
+    echo sprintf( $text, $arg1, $arg2 ); # formateo de text
 
 ?>
