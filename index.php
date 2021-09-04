@@ -56,10 +56,19 @@
         echo var_dump($name); 
     */
 
-    $word1 = 'Codigo';
-    $word2 = 'Facilito';
+    /*    
+         $word1 = 'Codigo';
+        $word2 = 'Facilito';
+        echo "Hola bienvenido a {$word1}{$word2}sss"; 
+    */
 
-    echo "Hola bienvenido a {$word1}{$word2}sss";
-
+    /**
+     *  EXTRAER Y BUSCAR
+     * 
+     */
+    $myString = "Bienvenido al mundo de la programacion";
+    $findMy = "a";
+    echo substr("MARINES MENDEZ GALLEGOS" , -8);
+    echo strpos($myString,$findMy, 12);
 
 ?>
