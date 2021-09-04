@@ -42,18 +42,24 @@
      * CONVERSION Y TIPOS
      * 
      */
-    $name = 'JUANITO';
-    $price = 2021.33;
-    $age = 12;
-    $isDog = false;
-    # FORZAR A UNA VARIABLE A QUE TOME UN TIPO DE DATO
-    $price = (int) $price;
-    var_dump (strval($price));
-    $name = (bool) $name;
-    echo getType($price);
-    echo var_dump($price);
-    echo var_dump($name);
 
+    /*     $name = 'JUANITO';
+        $price = 2021.33;
+        $age = 12;
+        $isDog = false;
+        # FORZAR A UNA VARIABLE A QUE TOME UN TIPO DE DATO
+        $price = (int) $price;
+        var_dump (strval($price));
+        $name = (bool) $name;
+        echo getType($price);
+        echo var_dump($price);
+        echo var_dump($name); 
+    */
+
+    $word1 = 'Codigo';
+    $word2 = 'Facilito';
+
+    echo "Hola bienvenido a {$word1}{$word2}sss";
 
 
 ?>
