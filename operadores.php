@@ -70,14 +70,35 @@
     $a = 15;
     $b = &$a;
 
-    echo "$a <br>";
-    echo "$b <br>";
+    // echo "$a <br>";
+    // echo "$b <br>";
 
-    $a = 70;
+    // $a = 70;
 
-    echo "$a <br>";
-    echo "$b <br>";
+    // echo "$a <br>";
+    // echo "$b <br>";
 
 
+    /*** OPERADORES LOGICOS */
+
+    $attendance = 5;
+    $average = 7;
+    $result = ( $average >= 7 or $attendance == 6 );
+    echo var_dump($result);
+
+    /**
+     *  Operador y && 
+     *  $result = ( $average >= 7 && $attendance == 6 );
+     * 
+     *  Operador O ||
+     *  $result = ( $average >= 7 || $attendance == 6 );
+     *  
+     *  Operador not !
+     *  $result = !( $average >= 8 );
+     * 
+     *  Operador AND, OR Y XOR (uno de los valores debe ser verdadero)
+     *  $result = ( $average >= 7 xor $attendance == 6 );
+     * 
+     */
 
 ?>
