@@ -42,7 +42,6 @@
     $operando2 = 2;
 
     $result = $operando1 ** $operando2;
-    echo $result;
     /***
      * 
      *  Adicion +
@@ -65,6 +64,20 @@
      *  
      * 
      */
+
+    /*** ASIGNACION */
+
+    $a = 15;
+    $b = &$a;
+
+    echo "$a <br>";
+    echo "$b <br>";
+
+    $a = 70;
+
+    echo "$a <br>";
+    echo "$b <br>";
+
 
 
 ?>
