@@ -110,5 +110,19 @@
     // echo 'Pos decremento '. $a--. '<br>';
     // echo 'resultado '. $a;
 
+    /*** TERNARIO , ELVIS Y FUSION NULL */
+
+    //(Expresion bool)?expresion : expresion;
+
+    $age = null;
+    //echo ( $age >= 18 )? 'Eres mayor de edad': 'Eres menor de edad'; # Operador ternario
+
+    //echo isset($age)?: 'No hay edad'; # Operador elvis ... este operador si la variable esta declarada asi $age; sin valores da error se debe ocupar isset
+
+    echo $age ?? 'No hay edad'; # Operador FUSION NULL ... si la variable no tiene valores controla el error
+
+    
+
+
 
 ?>
