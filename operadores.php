@@ -84,7 +84,7 @@
     $attendance = 5;
     $average = 7;
     $result = ( $average >= 7 or $attendance == 6 );
-    echo var_dump($result);
+    //echo var_dump($result);
 
     /**
      *  Operador y && 
@@ -100,5 +100,15 @@
      *  $result = ( $average >= 7 xor $attendance == 6 );
      * 
      */
+
+
+    /*** INCREMENTO Y DECREMENTO */
+
+    $a = 5;
+    // echo 'Pos incremento '. $a++. '<br>';
+    // echo 'resultado pre'. ++$a .'<br>';
+    // echo 'Pos decremento '. $a--. '<br>';
+    // echo 'resultado '. $a;
+
 
 ?>
