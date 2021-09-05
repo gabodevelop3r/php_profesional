@@ -52,4 +52,15 @@
     }while( $cont <= 12);
 
 
+    $animals = array('gato','perro','panda');
+    $datas = array('nombre'=>'Marines','Apellido'=>'Mendez', 'Sexo'=>'Femenino');
+
+    foreach($animals as $animal){
+        echo "El animal es $animal <br>";
+    }
+
+    foreach($datas as $clave => $animal){
+        echo "La clave es $clave y el animal es $animal <br>";
+    }
+
 ?>
