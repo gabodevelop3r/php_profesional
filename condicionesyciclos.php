@@ -39,6 +39,17 @@
         echo "Anuncio a repetir $i <br>";
     }
 
+    $cont = 1;
+
+    while( $cont <=12 ){
+        echo "zapato numero $cont <br>";
+        ++$cont;
+    }
+
+    do{
+        echo "Zapato numero $cont <br>";
+        ++$cont;
+    }while( $cont <= 12);
 
 
 ?>
