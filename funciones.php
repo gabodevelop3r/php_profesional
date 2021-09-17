@@ -56,8 +56,23 @@ function operation ( $num1 , $num2 ){
     return array ( $num1 - $num2, $num1 + $num2, $num1 / $num2) ;
 }
 
-list ( $minis, $plus, $divideBy ) = operation( 15, 5 );
-echo "La suma es: $plus,  la resta es: $minis, la division es:$divideBy ";
+list ( $minus, $plus, $divideBy ) = operation( 15, 5 );
+# echo "La suma es: $plus,  la resta es: $minus, la division es:$divideBy ";
+
+/*** funciones anonimas */
+$operation = function( $num1, $num2 ){
+    return $num1+$num2;
+};
+
+# echo 'El resultado es '.$operation( 15, 5 );
+
+/*** funciones variables */
+function variables(){
+    echo 'funcion variable';
+}
+
+$variable = 'variables';
+$variable();
 
 
 ?>
