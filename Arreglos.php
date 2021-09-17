@@ -34,14 +34,42 @@ $battleship = array(
                     'D' => array('Mar','Mar','Mar','Mar')
                 );
 
-print_r( $battleship );
+# print_r( $battleship );
 
 $coodinates = $battleship['A'][0];
-echo $coodinates;
+# echo $coodinates;
 
 $coodinates = $battleship['A'][1];
-echo $coodinates;
+# echo $coodinates;
 
+
+/***Recorrer arreglos  */
+
+for ( $i=0; $i < sizeof( $colors ) ; $i++ ) { 
+    # code...
+    # echo "Indice: $i Valor:{$colors[$i]} \n";
+}
+
+foreach ($person as $key => $value) {
+    # code...
+    # echo "Indice: $key Valor:{$value} \n";
+
+}
+
+
+foreach ($battleship as $key => $value) {
+    # code...
+    for ($i=0; $i < sizeof( $value ) ; $i++) { 
+        # code...
+        if( $battleship[$key][$i] == 'BARCO' )
+            echo "Coordenadas: Fila $key Columna:$i destruir <br>";
+        else
+            echo "Coordenadas: Fila $key Columna:$i <br> ";  
+       
+
+    }
+
+}
 
 
 ?>
