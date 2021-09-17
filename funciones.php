@@ -1,5 +1,6 @@
 <?php
 
+declare( strict_types = 1);
 
 function subjects(){
 
@@ -72,7 +73,27 @@ function variables(){
 }
 
 $variable = 'variables';
-$variable();
+# $variable();
+
+/**** Declaraciones de tipo escalar */
+
+function validate( int $age ): string
+{
+
+    if($age >= 18){
+        return 'Puedes ver la pelicula';
+
+    }else{
+        return 'No puedes ver la pelicula';
+    }
+}
+
+echo validate(18);
+
+
+
+
+
 
 
 ?>
