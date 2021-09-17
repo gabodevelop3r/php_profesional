@@ -13,8 +13,8 @@ $jose->lastname = 'Lopez';
 
 
 $carla = new Person();
-$jose->name = 'Carla';
-
+$carla->name = 'Carla';
+echo $carla->see();
 
 Person::$color = 'Azul';
 
