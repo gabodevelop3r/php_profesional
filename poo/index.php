@@ -1,5 +1,5 @@
 <?php
-
+declare (strict_types = 1);
 # require('./person.php'); # establece que el codigo del archivo invocado es requerido (obligatorio)
 # include() # si no encuentra el error retorna warning no detiene la ejecucion
 require_once('./person.php'); # permite la carga de un archivo una sola vez
@@ -23,7 +23,10 @@ Person::$color = 'Azul';
 
 $luren = new Client();
 $luren->eat();
-
+$luren->setEmail('correo@gmail.com');
+echo $luren->getEmail();
+$luren->setCommon(1);
+echo $luren->getCommon();
 
 $gael = new Employee();
 $gael->run();
