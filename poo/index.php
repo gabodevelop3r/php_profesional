@@ -8,6 +8,7 @@ require_once('./person.php'); # permite la carga de un archivo una sola vez
 
 require_once('./client.php');
 require_once('./employee.php');
+require_once('./provider.php');
 /*** variables de instancia */
 /**** Person es una clase abstracta por lo que dejo de ser instanciable */
 # $jose = new Person();
@@ -23,14 +24,18 @@ require_once('./employee.php');
 # Person::$color = 'Azul';
 
 $luren = new Client();
-$luren->run();
+$gael = new Employee();
+$sudoku = new Provider();
+
+
 # $luren->eat();
 $luren->setEmail('correo@gmail.com');
 echo $luren->getEmail();
 
 
-$gael = new Employee();
-# $gael->run();
+$luren->run();
+$gael->run();
+$sudoku->run();
 
 
 
