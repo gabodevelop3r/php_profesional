@@ -8,12 +8,14 @@ class Person{
     $nationality;
     $age;
 
+    static $color = 'Rojo';
+
     function run(){
 
     }
 
     function see(){
-        echo "yo veo una camisa azul";
+        echo "yo veo una camisa ".self::color;
         $this->name;
         $this->run();
     }
