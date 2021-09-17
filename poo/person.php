@@ -11,6 +11,7 @@ class Person{
     static $color = 'Rojo';
 
     function run(){
+        echo 'Metodo de la clase padre';
 
     }
 

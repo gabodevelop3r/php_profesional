@@ -5,6 +5,9 @@
 require_once('./person.php'); # permite la carga de un archivo una sola vez
 # include_once() # permite la inclusion de un archivo una sola vez
 
+
+require_once('./client.php');
+require_once('./employee.php');
 /*** variables de instancia */
 $jose = new Person();
 
@@ -14,8 +17,17 @@ $jose->lastname = 'Lopez';
 
 $carla = new Person();
 $carla->name = 'Carla';
-echo $carla->see();
+# echo $carla->see();
 
 Person::$color = 'Azul';
+
+$luren = new Client();
+$luren->eat();
+
+
+$gael = new Employee();
+$gael->run();
+
+
 
 ?>
