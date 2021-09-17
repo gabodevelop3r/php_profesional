@@ -1,6 +1,6 @@
 <?php
 
-class Person{
+abstract class Person{
 
     public $name;
     public $lastname;
@@ -10,10 +10,7 @@ class Person{
 
     static $color = 'Rojo';
 
-    function run(){
-        echo 'Metodo de la clase padre';
-
-    }
+    abstract function run();
 
     function see(){
         # echo "yo veo una camisa ".self::$color;

@@ -9,6 +9,10 @@ class Provider extends Person {
     function sendProducts(){
 
     }
+
+    function run(){
+        echo 'proveedor corriendo';
+    }
 }
 
 ?>

@@ -9,19 +9,21 @@ require_once('./person.php'); # permite la carga de un archivo una sola vez
 require_once('./client.php');
 require_once('./employee.php');
 /*** variables de instancia */
-$jose = new Person();
+/**** Person es una clase abstracta por lo que dejo de ser instanciable */
+# $jose = new Person();
 
-$jose->name = 'Jose';
-$jose->lastname = 'Lopez';
+# $jose->name = 'Jose';
+# $jose->lastname = 'Lopez';
 
 
-$carla = new Person();
-$carla->name = 'Carla';
+# $carla = new Person();
+# $carla->name = 'Carla';
 # echo $carla->see();
 
-Person::$color = 'Azul';
+# Person::$color = 'Azul';
 
 $luren = new Client();
+$luren->run();
 # $luren->eat();
 $luren->setEmail('correo@gmail.com');
 echo $luren->getEmail();

@@ -6,15 +6,11 @@ class Client extends Person{
     private $email;
 
     function __construct(){
-        echo 'Inicio';
+        # echo 'Inicio';
         $this->common = '';
         $this->email = 'default@default';
     }
     
-    function eat(){
-        echo parent::talk();
-    }
-
     /**
      * Get the value of common
      */ 
@@ -52,11 +48,19 @@ class Client extends Person{
         $this->email = $email;
 
     }
-
+    function run(){
+        echo 'cliente corriendo';
+    }
+    function eat(){
+        echo parent::talk();
+    }
 
     function __destruct(){
-        echo 'Limpieza';
+        # echo 'Limpieza';
     }
+
+    
+
 
 }
 

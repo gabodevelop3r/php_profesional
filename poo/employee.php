@@ -10,7 +10,9 @@ class Employee extends Person {
     function cook(){
 
     }
-
+    function run(){
+        echo 'empleado corriendo';
+    }
 }
 
 ?>
