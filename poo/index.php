@@ -22,14 +22,13 @@ $carla->name = 'Carla';
 Person::$color = 'Azul';
 
 $luren = new Client();
-$luren->eat();
+# $luren->eat();
 $luren->setEmail('correo@gmail.com');
 echo $luren->getEmail();
-$luren->setCommon(1);
-echo $luren->getCommon();
+
 
 $gael = new Employee();
-$gael->run();
+# $gael->run();
 
 
 

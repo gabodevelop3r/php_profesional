@@ -5,14 +5,11 @@ class Client extends Person{
     private $common;
     private $email;
 
-    // public function __set( $nameAttribute, $value ){
-    //     $this->$nameAttribute = $value;
-    // }
-
-    // public function __get($nameAttribute){
-    //     return $this->$nameAttribute;
-    // }
-
+    function __construct(){
+        echo 'Inicio';
+        $this->common = '';
+        $this->email = 'default@default';
+    }
     
     function eat(){
         echo parent::talk();
@@ -54,6 +51,11 @@ class Client extends Person{
     {
         $this->email = $email;
 
+    }
+
+
+    function __destruct(){
+        echo 'Limpieza';
     }
 
 }
