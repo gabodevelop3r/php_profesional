@@ -35,7 +35,7 @@ function plus ( $param1 , $param2 ){
 $arg1 = 20 ;
 $arg2 = 5;
 
-plus( $arg1, $arg2 );
+# plus( $arg1, $arg2 );
 
 # echo "\n El argumento es $arg1";
 
@@ -49,6 +49,15 @@ function call ( $value ){
         call( ++$value );
     }
 }
-call( 1 );
+# call( 1 );
+
+/** Retornar valores */
+function operation ( $num1 , $num2 ){
+    return array ( $num1 - $num2, $num1 + $num2, $num1 / $num2) ;
+}
+
+list ( $minis, $plus, $divideBy ) = operation( 15, 5 );
+echo "La suma es: $plus,  la resta es: $minis, la division es:$divideBy ";
+
 
 ?>
