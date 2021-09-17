@@ -1,7 +1,11 @@
 <?php 
 include_once('./person.php');
+include_once('./operation.php');
 
 class Client extends Person{
+
+    use Operation;
+
     private $common;
     private $email;
 
@@ -54,6 +58,11 @@ class Client extends Person{
     function eat(){
         echo parent::talk();
     }
+
+    function pay(){
+        echo 'El dinero que gaste fue:'.$this->plus( 89, 17 );
+    }
+
 
     function __destruct(){
         # echo 'Limpieza';

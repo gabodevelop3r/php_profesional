@@ -23,19 +23,21 @@ require_once('./provider.php');
 
 # Person::$color = 'Azul';
 
-$luren = new Client();
-$gael = new Employee();
-$sudoku = new Provider();
+$client = new Client();
+$employee = new Employee();
+$provider = new Provider();
 
 
-# $luren->eat();
-$luren->setEmail('correo@gmail.com');
-echo $luren->getEmail();
+# $client->eat();
+$client->setEmail('correo@gmail.com');
+echo $client->getEmail();
 
 
-$luren->run();
-$gael->run();
-$sudoku->run();
+$client->pay();
+echo $client->plus( 100, 30 );
+# $client->run();
+# $employee->run();
+# $provider->run();
 
 
 
