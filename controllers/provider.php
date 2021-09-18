@@ -1,8 +1,8 @@
 <?php 
+namespace controllers;
 include_once('./person.php');
 
-
-class Provider extends Person {
+class Provider extends \Person {
     private $account;
     private $bank;
 

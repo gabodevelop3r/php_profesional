@@ -6,9 +6,9 @@ require_once('./person.php'); # permite la carga de un archivo una sola vez
 # include_once() # permite la inclusion de un archivo una sola vez
 
 
-require_once('./client.php');
+require_once('../controllers/client.php');
 require_once('./employee.php');
-require_once('./provider.php');
+require_once('../controllers/provider.php');
 /*** variables de instancia */
 /**** Person es una clase abstracta por lo que dejo de ser instanciable */
 # $jose = new Person();
@@ -23,9 +23,11 @@ require_once('./provider.php');
 
 # Person::$color = 'Azul';
 
-$client = new Client();
+use controllers as ctl;
+
+$client = new ctl\Client();
 $employee = new Employee();
-$provider = new Provider();
+$provider = new ctl\Provider();
 
 
 # $client->eat();

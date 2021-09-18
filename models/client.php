@@ -1,10 +1,12 @@
 <?php 
+
+namespace models;
 include_once('./person.php');
 include_once('./operation.php');
 
-class Client extends Person{
+class Client extends \Person{
 
-    use Operation;
+    use \Operation;
 
     private $common;
     private $email;
@@ -63,7 +65,7 @@ class Client extends Person{
         echo 'El dinero que gaste fue:'.$this->plus( 89, 17 );
     }
 
-    function say(Employee $employee){
+    function say(\Employee $employee){
         echo "{$this->getName()} felicitame {$employee->getName()}";
     }
 
