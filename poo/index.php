@@ -2,13 +2,19 @@
 declare (strict_types = 1);
 # require('./person.php'); # establece que el codigo del archivo invocado es requerido (obligatorio)
 # include() # si no encuentra el error retorna warning no detiene la ejecucion
-require_once('./person.php'); # permite la carga de un archivo una sola vez
+#require_once('./person.php'); # permite la carga de un archivo una sola vez
 # include_once() # permite la inclusion de un archivo una sola vez
 
+require_once('./autoload.php');
 
-require_once('../controllers/client.php');
-require_once('./employee.php');
-require_once('../controllers/provider.php');
+(new Autoloader())->load();
+
+function load($class){
+    echo $class;
+}
+
+spl_autoload_register('load');
+
 /*** variables de instancia */
 /**** Person es una clase abstracta por lo que dejo de ser instanciable */
 # $jose = new Person();
@@ -26,8 +32,8 @@ require_once('../controllers/provider.php');
 use controllers as ctl;
 
 $client = new ctl\Client();
-$employee = new Employee();
 $provider = new ctl\Provider();
+$employee = new ctl\Employee();
 
 
 # $client->eat();

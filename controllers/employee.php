@@ -1,9 +1,10 @@
 <?php 
-include_once('./person.php');
-include_once('./respiration.php');
+namespace controllers;
+include_once('../poo/person.php');
+include_once('../poo/respiration.php');
 
 
-class Employee extends Person implements Respiration {
+class Employee extends \Person implements \Respiration {
 
     private $position;
     private $schedule;
