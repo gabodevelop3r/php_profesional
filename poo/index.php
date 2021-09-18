@@ -30,15 +30,18 @@ $provider = new Provider();
 
 # $client->eat();
 $client->setEmail('correo@gmail.com');
-echo $client->getEmail();
+# echo $client->getEmail();
 
 
-$client->pay();
-echo $client->plus( 100, 30 );
+# $client->pay();
+# echo $client->plus( 100, 30 );
 # $client->run();
 # $employee->run();
 # $provider->run();
-
+$client->setName('juanito');
+$provider->setName('allan');
+$employee->setName('felicitame a juanito');
+$client->say($employee);
 
 
 ?>
