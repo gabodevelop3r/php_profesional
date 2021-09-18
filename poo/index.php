@@ -49,7 +49,32 @@ $client->setEmail('correo@gmail.com');
 $client->setName('juanito');
 $provider->setName('allan');
 $employee->setName('felicitame a juanito');
-$client->say($employee);
+# $client->say($employee);
 
+$anonymus = new class(50, 1) extends Person{
+
+    private $dividend;
+    private $divisor;
+
+    public function __construct($dividend,$divisor){
+        $this->see();
+        $this->dividend = $dividend;
+        $this->divisor = $divisor;
+
+    }
+
+    public function run(){
+
+    }
+
+    public function dividedBy(){
+        $plus = $this->dividend + $this->divisor;
+
+        echo 'soy la clase anonima '.$plus;
+
+    }
+};
+
+$anonymus->dividedBy();
 
 ?>
